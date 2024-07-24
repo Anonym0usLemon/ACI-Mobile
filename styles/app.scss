@@ -1,0 +1,217 @@
+@import './reset.scss';
+
+$primary-color: #185E73;
+$secondary-color: #d8dee8;
+$primary-text: #fff; 
+$secondary-text: #57B6B2;
+$thirdondary-text: #696969; // Didn't know what else to coll it OK
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+
+  @media only screen and (max-width: 450px) {
+    font-size: 15px;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.window {
+  max-width: 600px;
+}
+
+header {
+  width: 100%;
+  
+  img {
+    max-width: 100%;
+  }
+}
+
+.contact-info {
+  margin-top: -3px;
+}
+
+.contact-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 20px;
+  gap: 35px;
+
+  @media only screen and (max-width: 450px) {
+    gap: 20px;
+  }
+
+  svg {
+    fill: $primary-color;
+    height: 45px;
+    width: 45px;
+  }
+
+  img {
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+  }
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1px;
+
+  a {
+    text-decoration: none;
+  }
+
+  svg {
+    fill: $primary-text;
+    height: 25px;
+    width: 25px;
+  }
+}
+
+// Option styles for blue bar links
+.option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+  background-color: $primary-color;
+  color: $primary-text;
+  border-radius: 10px;
+  height: 45px;
+
+  .heart {
+    width: 50px;
+  }
+
+  svg {
+    width: 35px;
+  }
+}
+
+.catalogs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-block: 1px;
+
+  a {
+    text-decoration: none;
+  }
+
+  .option2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.3%;
+    background-color: $secondary-color;
+    color: $primary-color;
+    border-radius: 10px;
+    border: 2px solid $primary-color;
+    height: 45px;
+  }
+}
+
+.option3 {
+  background-color: $secondary-text;
+  color: $primary-color;
+
+  p {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin-right: 40px;
+  }
+}
+
+.bkg-town a {
+  text-decoration: none;
+}
+
+.backgroundtown-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+
+  p {
+    width: 70%;
+    color: $thirdondary-text;
+    letter-spacing: 0.5px;
+    line-height: 1.235;
+  }
+
+  a {
+    width: 30%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.point-right{ 
+  transform: rotate(90deg);
+}
+
+.point-down {
+  transform: rotate(180deg);
+}
+
+.modal {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 25px;
+  background-color: #d8dee8;
+  border-radius: 5px;
+  padding: 5px;
+  border: 2px solid grey;
+
+  .modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  img {
+    height: 70px;
+  }
+
+  svg {
+    position: relative;
+    top: 10px;
+    height: 40px;
+  }
+}
+
+.download-btn {
+  text-align: center;
+  margin-block: 20px;
+}

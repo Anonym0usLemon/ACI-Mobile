@@ -1,0 +1,299 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+@media only screen and (max-width: 450px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.window {
+  max-width: 600px;
+}
+
+header {
+  width: 100%;
+}
+header img {
+  max-width: 100%;
+}
+
+.contact-info {
+  margin-top: -3px;
+}
+
+.contact-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 20px;
+  gap: 35px;
+}
+@media only screen and (max-width: 450px) {
+  .contact-bar {
+    gap: 20px;
+  }
+}
+.contact-bar svg {
+  fill: #185E73;
+  height: 45px;
+  width: 45px;
+}
+.contact-bar img {
+  height: 45px;
+  width: 45px;
+  border-radius: 5px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1px;
+}
+.links a {
+  text-decoration: none;
+}
+.links svg {
+  fill: #fff;
+  height: 25px;
+  width: 25px;
+}
+
+.option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+  background-color: #185E73;
+  color: #fff;
+  border-radius: 10px;
+  height: 45px;
+}
+.option .heart {
+  width: 50px;
+}
+.option svg {
+  width: 35px;
+}
+
+.catalogs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-block: 1px;
+}
+.catalogs a {
+  text-decoration: none;
+}
+.catalogs .option2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.3%;
+  background-color: #d8dee8;
+  color: #185E73;
+  border-radius: 10px;
+  border: 2px solid #185E73;
+  height: 45px;
+}
+
+.option3 {
+  background-color: #57B6B2;
+  color: #185E73;
+}
+.option3 p {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin-right: 40px;
+}
+
+.bkg-town a {
+  text-decoration: none;
+}
+
+.backgroundtown-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+.backgroundtown-section p {
+  width: 70%;
+  color: #696969;
+  letter-spacing: 0.5px;
+  line-height: 1.235;
+}
+.backgroundtown-section a {
+  width: 30%;
+}
+.backgroundtown-section a img {
+  width: 100%;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.point-right {
+  transform: rotate(90deg);
+}
+
+.point-down {
+  transform: rotate(180deg);
+}
+
+.modal {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 25px;
+  background-color: #d8dee8;
+  border-radius: 5px;
+  padding: 5px;
+  border: 2px solid grey;
+}
+.modal .modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.modal .modal-content p {
+  font-size: 16px;
+}
+.modal img {
+  height: 70px;
+}
+.modal svg {
+  position: relative;
+  top: 10px;
+  height: 40px;
+}
+
+.download-btn {
+  text-align: center;
+  margin-block: 20px;
+}/*# sourceMappingURL=app.css.map */

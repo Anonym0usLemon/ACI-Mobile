@@ -1,0 +1,15 @@
+{
+  "name": "ACI Mobile",
+  "short_name": "ACI Mobile",
+  "start_url": "/aci-mobile",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#fff",
+  "icons": [
+    {
+      "src": "./img/logo.jpg",
+      "sizes": "600x600",
+      "type": "image/jpeg"
+    }
+  ]
+}
